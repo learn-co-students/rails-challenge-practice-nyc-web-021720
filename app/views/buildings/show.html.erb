@@ -1,0 +1,8 @@
+<h1>Building Information For: <%= @building.name %></h1>
+
+<h2>Current Companies</h2>
+<ul>
+	<%@building.company_names.each do |comp_name| %>
+	<li><%= comp_name %></li>
+	<% end %>
+</ul>
